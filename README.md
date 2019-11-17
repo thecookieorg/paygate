@@ -84,21 +84,21 @@ and use them in your `paygate_result` page to display status of the transaction.
 
 ## Fields explained
 
-`paygate_id`: a unique ID obtained from PayGate (test value: 10011072130).
-`encription_key`: password obtained by PayGate (test: secret).
-`reference_number`: this is your reference number for use by your internal systems.
-`amount`: transaction amount in cents. e.g. 32.99 is specified as 3299.
-`currency`: currency code of the currency the customer is paying in. Refer to [Currency Codes](http://docs.paygate.co.za/#country-codes).
-`return_url`: once the transaction is completed, PayWeb will return the customer to a page on your web site. The page the customer must see is specified in this field.
-`locale`: the locale code identifies to PayGate the customer’s language, country and any special variant preferences (such as Date/Time format) which may be applied to the user interface. Please contact PayGate support to check if your locale is supported. If the locale passed is not supported, then PayGate will default to the “en” locale.
-`country`: Country code of the country the customer is paying from. Refer to [Country Codes](http://docs.paygate.co.za/#country-codes).
-`recepient`: if the transaction is approved, PayWeb will email a payment confirmation to this email address – unless this is overridden at a gateway level by using the Payment Confirmation setting. This field remains compulsory but the sending of the confirmation email can be blocked .
-`pay_method`: Refer to [PAY_METHOD](http://docs.paygate.co.za/#payment-method-codes).
+- `paygate_id`: a unique ID obtained from PayGate (test value: 10011072130).
+- `encription_key`: password obtained by PayGate (test: secret).
+- `reference_number`: this is your reference number for use by your internal systems.
+- `amount`: transaction amount in cents. e.g. 32.99 is specified as 3299.
+- `currency`: currency code of the currency the customer is paying in. Refer to [Currency Codes](http://docs.paygate.co.za/#country-codes).
+- `return_url`: once the transaction is completed, PayWeb will return the customer to a page on your web site. The page the customer must see is specified in this field.
+- `locale`: the locale code identifies to PayGate the customer’s language, country and any special variant preferences (such as Date/Time format) which may be applied to the user interface. Please contact PayGate support to check if your locale is supported. If the locale passed is not supported, then PayGate will default to the “en” locale.
+- `country`: Country code of the country the customer is paying from. Refer to [Country Codes](http://docs.paygate.co.za/#country-codes).
+- `recepient`: if the transaction is approved, PayWeb will email a payment confirmation to this email address – unless this is overridden at a gateway level by using the Payment Confirmation setting. This field remains compulsory but the sending of the confirmation email can be blocked .
+- `pay_method`: Refer to [PAY_METHOD](http://docs.paygate.co.za/#payment-method-codes).
 
 ## Other
 
-You can find official documentation for PayGate PayWeb 3 [here](http://docs.paygate.co.za/).
-You can find more about error codes [here](http://docs.paygate.co.za/#error-codes).
+- You can find official documentation for PayGate PayWeb 3 [here](http://docs.paygate.co.za/).
+- You can find more about error codes [here](http://docs.paygate.co.za/#error-codes).
 
 ## Contributing
 
