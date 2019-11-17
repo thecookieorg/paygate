@@ -6,7 +6,9 @@ require "paygate/version"
 Gem::Specification.new do |spec|
   spec.name          = "paygate"
   spec.version       = Paygate::VERSION
-  spec.authors       = ["thecookieorg"]
+  spec.platform      = Gem::Platform::RUBY
+  spec.authors       = ["Marko Manojlovic"]
+  spec.licenses      = ['MIT']
   spec.email         = ["marko.manojlovic.bg@gmail.com"]
 
   spec.summary       = "This is a simple Ruby wrapper for South African PayGate PayWeb 3"
@@ -15,10 +17,12 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "httparty", "~> 0.17.1"
 
+  spec.post_install_message = "Lets process those payments!"
+
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata["allowed_push_host"] = 'https://rubygems.org'
 
     spec.metadata["homepage_uri"] = spec.homepage
     spec.metadata["source_code_uri"] = "https://github.com/thecookieorg/paygate"
